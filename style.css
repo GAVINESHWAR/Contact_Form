@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+   min-height: 100vh;
+    background: linear-gradient(135deg, #b3e5fc, #fff9c4); /* Light blue to sunlight yellow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.contact-container {
+    background: linear-gradient(135deg, #f3e7e9, #e3e9f3);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 360px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #555;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.input-box input, .input-box textarea {
+    width: 100%;
+    padding: 12px;
+    background: #ffffff; /* White background for input fields */
+    border: 2px solid #d1d5db;
+    border-radius: 5px;
+    outline: none;
+    color: #333;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.input-box label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    pointer-events: none;
+    color: #777;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+.input-box input:focus ~ label, .input-box textarea:focus ~ label,
+.input-box input:valid ~ label, .input-box textarea:valid ~ label {
+    top: -15px;
+    left: 10px;
+    font-size: 0.8em;
+    color: #6c63ff; /* Light purple color for active label */
+    background: #ffffff;
+    padding: 0 4px;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #6c63ff;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #5a55c7;
+}
